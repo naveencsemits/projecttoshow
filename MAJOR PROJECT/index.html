@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visual Learning Platform for Data Structure and Algorithms</title>
+
+<!-- CDN for external libraries -->
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+
+<!-- Custom css -->
+<style type="text/css">
+	.logo-setting{
+	    margin: -5px 0 0 0;
+	    padding: 0px 0px 0px 0px;
+	    width: 280px;
+	    height: auto;
+	}
+	.gradient-shadow{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfe7fa+0,6393c1+100;Grey+Blue+3D */
+background: #cfe7fa; /* Old browsers */
+background: -moz-linear-gradient(top, #cfe7fa 0%, #6393c1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #cfe7fa 0%,#6393c1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #cfe7fa 0%,#6393c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 ); /* IE6-9 */
+	}
+	.gradient-black{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,596a72+100;Grey+3D+%231 */
+background: #cedce7; /* Old browsers */
+background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #cedce7 0%,#596a72 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #cedce7 0%,#596a72 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
+	}
+
+	.box-shadow{
+		-webkit-box-shadow: 2px 2px 18px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 18px 3px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 18px 3px rgba(0,0,0,0.75);
+	}
+</style>
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav style="background: #000000" class="uk-navbar-container uk-margin" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <div class="uk-navbar-center">
+
+        <div class="uk-navbar-center-left"><div>
+            <ul class="uk-navbar-nav">
+                <li class="uk-text-bold" ><a href="#">Data Structures</a></li>
+                <!-- <li>
+                    <a href="#">Parent</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li> -->
+            </ul>
+        </div></div>
+        <a class="uk-navbar-item uk-logo" href="#"><img class="logo-setting" src="ds-img/logo.png"></a>
+        <div class="uk-navbar-center-right"><div>
+            <ul class="uk-navbar-nav">
+                <li class="uk-text-bold"><a style="" href="#">Algorithms</a></li>
+            </ul>
+        </div></div>
+
+    </div>
+</nav>
+<style type="text/css">
+	.bg-img{
+		background: 
+			linear-gradient(
+		      rgb(6, 236, 113, 0.59), rgba(0, 0, 0, 0.45)
+		    ),
+		    url("ds-img/bg1.jfif") repeat;
+	}
+</style>
+<div class="bg-img">
+<div class="uk-margin-auto uk-padding-small uk-margin-small uk-margin-remove-top uk-width-xxlarge">
+	<div class="uk-child-width-1-2@s uk-grid-match " uk-grid>
+    <div class="">
+        <div class="uk-box-shadow-xlarge gradient-shadow uk-card-body uk-card uk-card-default uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Bubble Sort</h3>
+            <p>Learn how Bubble Sorting Work!</p>
+            <button class="uk-button-primary uk-button uk-border-rounded" href="#show-sorting" uk-toggle>Learn Now</button>
+        </div>
+    </div>
+    <div>
+        <div  class="uk-box-shadow-xlarge gradient-shadow uk-card uk-card-default uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Merge Sort</h3>
+            <p>Learn how Merge Sorting Work!</p>
+            <button href="#show-sorting" uk-toggle class="uk-button-primary uk-button uk-border-rounded">Learn Now</button>
+        </div>
+    </div>
+    <div>
+        <div class="uk-box-shadow-xlarge uk-card-primary uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Selection Sort</h3>
+            <p>Learn how Selection Sorting Work!</p>
+            <button href="#show-sorting" uk-toggle class="uk-button-primary uk-button uk-border-rounded">Learn Now</button>
+        </div>
+    </div>
+    <div>
+        <div class="uk-box-shadow-xlarge uk-card uk-card-default uk-card-primary uk-card-hover uk-card-body uk-light">
+            <h3 class="uk-card-title">Quick Sort</h3>
+            <p>Learn how Quick Sorting Work!</p>
+            <button href="#show-sorting" uk-toggle class="uk-button-primary uk-button uk-border-rounded">Learn Now</button>
+        </div>
+    </div>
+
+     <div>
+        <div class="uk-box-shadow-xlarge gradient-black uk-card-default uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Insertion Sort</h3>
+            <p>Learn how Insertion Sorting Work!</p>
+            <button href="#show-sorting" uk-toggle class="uk-button-primary uk-button uk-border-rounded">Learn Now</button>
+        </div>
+    </div>
+    <div>
+        <div class="gradient-black uk-card-default uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Learn Array</h3>
+            <p>Learn how Array Data Structure </p>
+            <button href="#array-modal" uk-toggle class="uk-button-primary uk-button uk-border-rounded">Learn Now</button>
+        </div>
+    </div>
+    <div>
+        <div class="uk-box-shadow-xlarge uk-card uk-card-default uk-card-secondary uk-card-hover uk-card-body uk-light">
+            <h3 class="uk-card-title">Learn Linked List</h3>
+            <p>Learn how Linked-List works</p>
+            <button href="#linkedlist-modal" uk-toggle class="uk-button-primary uk-button uk-border-rounded">Learn Now</button>
+        </div>
+    </div>
+    <div>
+        <div class="uk-box-shadow-xlarge uk-card uk-card-default uk-card-secondary uk-card-hover uk-card-body uk-light">
+            <h3 class="uk-card-title">Tree Data Structure</h3>
+            <p>Learn how Tree Data Structure Work!</p>
+            <button href="#tree-modal" uk-toggle class="uk-button-primary uk-button uk-border-rounded">Learn Now</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modal for Sorting-->
+<div id="show-sorting" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div>
+
+        	<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
+			    <ul class="uk-slideshow-items">
+			        <li>
+			             <div>
+			            	<iframe src="sorting.htm" style="width: 100%; height: 662px;"></iframe>
+			            </div>
+			        </li>
+			        <li>
+		        	<div>
+		        		<h1 style="background-color: grey" class="uk-text-center">Time Complexity of Algorithms</h1>
+						<img class="uk-align-center" src="ds-img/complexity.png">
+		        	</div>
+			        </li>
+			    </ul>
+
+			    <a style="background-color: grey" class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+			    <a style="background-color: grey" class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+			</div>  
+        </div>
+    </div>
+</div>
+
+<!-- For Array -->
+<div id="array-modal" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div>
+        	
+			<div class="uk-flex-center" style="padding-left: 20%">
+	        	<div>
+	        		<h1 class="">Data Structure - Array</h1>
+					<img src="ds-img/arr1.jpg">
+					<img src="ds-img/arr2.jpg">
+					<img src="ds-img/arr3.jpg">
+					<h6 class="uk-text-bold">
+					Content Source - Hackerearth.com </h6>
+	        	</div>
+			</div>
+        	
+        </div>
+    </div>
+</div>
+<!-- For linkedlist -->
+<div id="linkedlist-modal" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div>
+        	
+			<div class="uk-flex-center" style="padding-left: 20%">
+	        	<div>
+	        		<h1 class="">Data Structure - Linkedlist</h1>
+					<img src="ds-img/ll1.jpg">
+					<img src="ds-img/ll2.jpg">
+					<img src="ds-img/ll3.jpg">
+					<img src="ds-img/ll4.jpg">
+					<img src="ds-img/ll5.jpg">
+					<h6 class="uk-text-bold">
+					Content Source - Hackerearth.com </h6>
+	        	</div>
+			</div>
+        	
+        </div>
+    </div>
+</div>
+<!-- For Array -->
+<div id="tree-modal" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div>
+        	
+			<div class="uk-flex-center" style="padding-left: 20%">
+	        	<div>
+	        		<h1 class="">Data Structure - Tree</h1>
+					<img src="ds-img/tree1.jpg">
+					<img src="ds-img/tree2.jpg">
+					<img src="ds-img/tree3.jpg">
+					<img src="ds-img/tree4.jpg">
+					<img src="ds-img/tree5.jpg">
+					<img src="ds-img/tree6.jpg">
+					<img src="ds-img/tree7.jpg">
+					<h6 class="uk-text-bold">
+					Content Source - Hackerearth.com </h6>
+	        	</div>
+			</div>
+        	
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="uk-card-footer uk-card-secondary " style="margin-top: -1%">
+	<h6>Developed By - <span><a target="__blank" href="http://linkedin.com/in/akashshakyacse">Akash Shakya</a><span> and <span><a>Naveen Chandravanshi</a></span></h6>
+</div>
+
+</body>
+</html>
